@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1488,3876" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1142,4273" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -119,7 +119,7 @@
       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="802,3651" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="802,4168" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="x:Object" Name="LineName" />
@@ -134,7 +134,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="760,84" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" OptionsString="add line station;add station master">
+    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="760,57" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" OptionsString="add line station;add station master">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:Object">[_out_InputDialog_1__Result]</OutArgument>
       </ui:InputDialog.Result>
@@ -145,7 +145,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[UiPathObjectExtensions.AsText(_out_InputDialog_1__Result)]" sap:VirtualizedContainerService.HintSize="760,3502" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[UiPathObjectExtensions.AsText(_out_InputDialog_1__Result)]" sap:VirtualizedContainerService.HintSize="760,4046" sap2010:WorkflowViewState.IdRef="Switch`1_1">
       <Switch.Default>
         <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <sap:WorkflowViewStateService.ViewState>
@@ -162,25 +162,25 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence x:Key="add line station" sap:VirtualizedContainerService.HintSize="644,888" sap2010:WorkflowViewState.IdRef="Sequence_11">
+      <Sequence x:Key="add line station" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="Sequence_11">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="602,823" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[string.Format(&quot;{0}\UiPath\MES Web\line station.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
+        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="374,48" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[string.Format(&quot;{0}\UiPath\MES Web\line station.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
           <ueab:ExcelApplicationCard.Body>
             <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,531" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,463" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="526,466" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Table(&quot;Table1&quot;)]" SaveAfterEachRow="False">
+                <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="526,383" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Table(&quot;Table1&quot;)]" SaveAfterEachRow="False">
                   <ueab:ExcelForEachRowX.Body>
                     <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                       <ActivityAction.Argument1>
@@ -189,13 +189,13 @@
                       <ActivityAction.Argument2>
                         <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                       </ActivityAction.Argument2>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,253" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,170" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_16">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -236,7 +236,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ueab:ReadCellValueX>
                         </Sequence>
-                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Add | Line Station Configuration" sap:VirtualizedContainerService.HintSize="450,75" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="8b6c6e3c-d6a5-42f7-a6a4-8ba5b6d11709" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Add | Line Station Configuration" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="8b6c6e3c-d6a5-42f7-a6a4-8ba5b6d11709" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
@@ -426,19 +426,19 @@
           </ueab:ExcelApplicationCard.Body>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ueab:ExcelApplicationCard>
       </Sequence>
-      <Sequence x:Key="add station master" sap:VirtualizedContainerService.HintSize="720,2120" sap2010:WorkflowViewState.IdRef="Sequence_12">
+      <Sequence x:Key="add station master" sap:VirtualizedContainerService.HintSize="720,3439" sap2010:WorkflowViewState.IdRef="Sequence_12">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="678,2055" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="[string.Format(&quot;{0}\UiPath\MES Web\station master.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
+        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="678,3374" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="[string.Format(&quot;{0}\UiPath\MES Web\station master.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
           <ueab:ExcelApplicationCard.Body>
             <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
               <ActivityAction.Argument>
@@ -449,13 +449,13 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="644,1763" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="644,3082" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="602,1698" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Table(&quot;Table1&quot;)]" SaveAfterEachRow="False">
+                <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="602,3017" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Table(&quot;Table1&quot;)]" SaveAfterEachRow="False">
                   <ueab:ExcelForEachRowX.Body>
                     <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                       <ActivityAction.Argument1>
@@ -469,13 +469,13 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1485" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,2804" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="526,113" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="526,57" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -527,7 +527,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ueab:ReadCellValueX>
                         </Sequence>
-                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Add | Station Master Configuration" sap:VirtualizedContainerService.HintSize="526,1307" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="fdd86fd0-f494-45df-905f-40768b220b73" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Add | Station Master Configuration" sap:VirtualizedContainerService.HintSize="526,2682" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="fdd86fd0-f494-45df-905f-40768b220b73" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
@@ -538,19 +538,14 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,1067" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,2442" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reset'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
-                                  <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvElementArea="924, 517, 78, 37" CvTextArea="943, 528, 39, 14" CvTextArgument="Reset" CvType="Button" DesignTimeRectangle="925, 519, 75, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Reset'" FullSelectorArgument="&lt;webctrl aaname='Reset' parentid='foo' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Reset' parentid='foo' tag='BUTTON' type='submit' class='btn btn-primary' check:innerText='Reset' /&gt;" Guid="96206d13-7666-4899-9a1e-f3786e4b4b03" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAmCAYAAACFz8YUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHmSURBVGhD7Zq7SgNBFIZ9KgmYFzAvZaFgYSzSiIi31iqopBAkeOlTRUK6EEiZFCEQSHOc685ld002Bze4/j98Rc7O7LDfnpk0u0fI1oE8RgJ5958DajSfaf/oAURIL7cfA2NKJ5F3J8TVTx/p4OyF6uevIEJ5EX5uPIGJvEbzCeLWIP0cCk82iTzZmlkTQIj0ZAN5BYE8BpDHAPIYQB4DyGMAeQxKkdeZmht7mY+HmWP/EuXJm05crTujuSiVIrC/ECstqJN1jclu5OXUfoX/Ik/VbJYzannXtAST+JrpZJtRX9eD+8nE85jsRp562BX1unbMkHrLcEwwJx4vfveMIC01vBaMrUTn+cnsqugBlQRTyxWgpcdnp1wvqVVCXtBFbmtJWuOVWjcd20ETGplKKMrVU7HrVUqeQMtyD6R+b3IeKRE6Wr6W57+IFFWTZx863Fr+Gfgz7n7pszJF9eTZ7rPCjAS/++T2tnOEANdd0TlnutHvvs40/sPY/MUUYWfykvMqERadX8E2NnJtMl+ES7iNvbmbHA0FKEVeVYE8BpDHAPIYQB4DyGMAeQwgjwHkMciUhw991pP7oc/1+xfVTtoQmIP0Ujtu00W3b4x58mSu3r7wcWMO0sul8OMnkIcUC+RtHaJvIW/XvdbzPq0AAAAASUVORK5CYII=" InformativeScreenshot="616d22124863f21aef9e8edf5106f1d2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
-                                  </uix:NClick.Target>
-                                </uix:NClick>
-                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -567,41 +562,49 @@
                                       <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" DesignTimeRectangle="425, 267, 145, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;span&amp;gt;span&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='select2-search select2-search--dropdown' aaname='' /&gt;" Guid="842634a3-2d18-44f2-82a3-db819b54b470" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJUAAAAqCAYAAAC6PhnvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIkSURBVHhe7dzLTsJAAIXheSI2PpKXh/B13Gpc+hIsCSwBAxi5FNooKLexp4CYOm0ZnR3/n5wYFrD60jZNRtOefNrrhxe7Xq/tZrPJ/ua3Wq0Yy+bycXAjR/JknqdLe3U/+P7Czx9YLpeMOffTycGNHMmT6c8+7c3jqyX6b3IkT+Yl/gAVBUmO5MmMElBRmORInsw4WYCKgiRH8mSiZF6ISg9kg8HANhoNW6/X2ZlPDuRBLlzJkTyZWfLuRKUvNptN22637Wg0slEUsTOfHMiDXLhgyZE8pajenKgkstPp2MVi8f0uYrvdsjPd4V2UPHS7Xdvv9/dSju1QvaWo4sSJSpe6OI6zHyQ6JA9yIR/5MlSppxRV7ESle6hkEuWTC/nIt0MVWzOdzQpR6ZJHlE8uilDJk4miaSEqbn3kSi6KUMlTiioCFXlVjiqyZjKZgIq8KkMlT2Y8HoOKvCpDJU+gIu8qUektKajIpzJU8gQq8g5UFDxQUfAqUQ2HQ1CRV2Wo5AlU5B2oKHiVqGq1GqjIK1BR8CpRcfsj30BFwatEdXnXAhV5VYmKZyryDVQUvEpUPFORb39GpSM48/l8/4nomFwUHdEqvf3pMGmv19t/Ijqmg6RFh0lLUelYc6vVynDpVCqRHMiDXBQdey+9/Sl9USJ1qdM9lJ335EAeXKDUSaiIfAIVBQ9UFDxQUfB+obq4fWIs+48ufx2omHMuLKduh2povwDQ42rJBHaydgAAAABJRU5ErkJggg==" InformativeScreenshot="19e41448f3d77607e479ff4c144a29d7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
                                     </uix:NTypeInto.Target>
                                   </uix:NTypeInto>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'LUKE_00'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AALC02'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvTextArgument="1000" CvType="Text" DesignTimeRectangle="431, 311, 133, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'LUKE_00'" FullSelectorArgument="&lt;webctrl aaname='LUKE_00' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='LUKE_00' tag='DIV' type='' class='select2-result-repository__title' check:innerText='LUKE_00' /&gt;" Guid="6e3899da-b81e-4409-a2ff-4332903437c0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIkAAAAYCAYAAADOHt4vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGZSURBVGhD7ZhLjsIwDIbnTnO7OQOnQUhcgm7ZVWxYIbEBiQUbT/NoSGynCYHMQ/otfYv04Rj5q1vx8fm1JQCWgCSgCCQBRSAJKAJJQBFIAookkqxPRHQ6Jhc49rS7EV3GvTy3OdOF7rTbZNaWIx2m1HQ708qsh6tZseD3ZLD5H3EY+DV+Lx9qzeApfkASd28QxGAludJ6XtfiBQli2DzxXk6QUCe/HjTRXRKbkwvRKImsL61rNd5TGSfyvwnU0lUS27TkSfc0SaLXEIuh1t86tUCgnySjaU5m1Dc1zr1KeL6HJJkaIcnLdJLEBxv9Ads4FrlrA5Dkt+g3SQYvi5YPk+RfUSnJwrmcJGbtJ8Z7GuckUCXxdZka1b2KUwosUS1J/IGYnONNYNLY+6ZImtv4dMv60umh1bj0m0Ad1ZKI/yByx/hkmbB542ONkojcIg97JSm1gOeRkoiQTYiDj3+9Me6JD6LY5soQuTSSexXR7P5zQJB3kEgCgAYkAUUgCSjyxySR3zxzVH2vgC5gkoAikAQUgSSgwJa+ASc9A/3g/RidAAAAAElFTkSuQmCC" InformativeScreenshot="a3def6e620297b4b583462845100cb5c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://usmes.delta.corp/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvTextArgument="AALC02" CvType="Text" DesignTimeRectangle="464, 345, 180, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'AALC02'" FullSelectorArgument="&lt;webctrl aaname='AALC02' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='select2-result-repository__title' /&gt;" Guid="005a2f75-4ac1-41b2-9add-2590dbd21826" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAYCAYAAABJLzcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVHhe7Zg5DsIwEEW5E7fjDJwGIXEJaOkQDRUSTZAoaIyXmIzH44WGYvwtPYHib4fijTNhtd4cDABageBANRAcqAaCA9VAcKAaCA5UUxR8dzd2vM1xL89Hajk/d79l1ynby9ttsAyWT+efZkfm1puzOb7mKT/avxeMRUHwm7laWSYrz3Q5C/OReq4u+Czn62G25LoTOu4V5F6k9vuRPM0ueUgOFmTBT88gUvyUMo5GriY4lzXHFY8x1xO5tn+YqSpwKJp6UYKREAV38nlJGkK1ckXBm6JaxExLYAgOUgTBQ9sRxJrbCPEUbueKgrsTP+unGWKmIbBf0ygcMBSZ4L6PJa0D74N/yZUE52tFfhXcn/jy/cC4MMGFk3gWJ+mFO3P/EjwUl3wvMDap4PEUlAYVsjNXb1F6enBZ8KyI7EgLEIBAInjxZGVC9uaKgktPgIz2vyjh5EbPDcoQwYNQ8gscnevN1QS3xKcAm3fSxvW8kNL95HYFAMoieKNtCK2AbRl6c9/vfNC2Yz7JyeDCJnskxZCv/Q7p6QKGhL1kAqALCA5UA8GBaiA4UA0EB6qB4EA1EBwo5mA+7qtwbwN8bR4AAAAASUVORK5CYII=" InformativeScreenshot="f8a3a1379f666f6c936bbf62447277ec.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
-                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,932" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* STATION NAME'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Text="[UiPathObjectExtensions.AsText(StationName)]" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Station Name'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://usmes.delta.corp/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvElementArea="844, 224, 197, 33" CvTextArea="857, 233, 87, 15" CvTextArgument="Station Name" CvType="InputBox" DesignTimeRectangle="859, 231, 156, 20" DesignTimeScaleFactor="1" FriendlyName="'Station Name'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span' idx='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='select2-selection__rendered' tag='SPAN' aaname='' check:innerText='Station Name' /&gt;" Guid="69b2f6e1-1040-4c7b-88d7-7fd89ce572b3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKAAAAAYCAYAAAB9VvY1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVGhD7ZfRjsIgEEX3/7/QNCY1jS/1TX+AhWGAmQG6rV2DD/ckfaAgDL1Hqj8OgIFAQDAUCAiGAgHBUCAgGAoEBEOBgGAoRsCnu08XN13ENa/cF4j9N3lrk9XdLpO7P2PrtUxumhb3is1/hOtuzb3Ofh+ze3ATfBdCwBjidWFbCBvsOQE/B9fpvzC6fg8E/GqKgM/FXVuy5PslZBU0BVzul7CDfOV+kLY+AfUYKQ+NnZf2mhX8xZhDLWYPlYB6H3pe/sKsYc/cT/XKOu0z0nvQbwzwF+IE5Ae5+QDNCUjhykDsHBwo92sB41gdfmnTWN/uryUpdT1mv76UXAnI8ok9xnXSvFy/qVGuS/Or/Ykaef7+FwVY9G9AOu3CA0+XDdwI2KAOqC2glpERstT9NmyJrCuOyxJUJ6BBnfz1Gno/njCf3IPsC9B8G+sBhfkTIqDgWMQsQkdAK+4OAatgAyK89wX0UO28bkdAWj/XvC2gOtGEgHoOeUHAvfQFzMhQTNBCvHRPizVIQA/NHz5vBMzSpLlpzRMC2j2AQ2QB68ATMdwYgg6aPmMC0KH0BWyuJ2Q5K2Aaf538PFlAXQ9xQsD+MwN7+ftPiDpBGgKKAKit5tCB6/EsSA5Xt88L6KHafT1KQDkutt99Bafxsh9SHsO8gmOQMTS+zMPUkpnx/l7sr195IaSeVOnz20HWchQ6Anri+qWeImW4gnhSoqMCesTPELog3yF2/AYE4HNAQDAUCAiGAgHBUCAgGAoEBEOBgGAgzv0CdBQ3Vewdgj8AAAAASUVORK5CYII=" InformativeScreenshot="c4fb50825d5c22d0326a957e571201ee.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AALC02_A_01_01'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://usmes.delta.corp/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvElementArea="844, 224, 197, 33" CvTextArea="857, 233, 87, 15" CvTextArgument="Station Name" CvType="InputBox" DesignTimeRectangle="859, 231, 156, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'AALC02_A_01_01'" FullSelectorArgument="&lt;webctrl aaname='AALC02_A_01_01' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='AALC02_A_01_01' tag='SPAN' type='' class='select2-selection__rendered' check:innerText='AALC02_A_01_01' /&gt;" Guid="5f3adc40-f77f-4aee-a813-575060ea8f5f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKAAAAAYCAYAAAB9VvY1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKWSURBVGhD7ZbhkeMgDEavSTfjCrYGOnEfbiJVcCAgFvBJAd/MkfXozfBjsyCQ9LD9xxvGQkxAYykmoLEUE9BYigloLMUENJZiAhpLgQK+jt1v2+bdmX9AnI7m7Mcr/3BB69XFkZc/9o1ilCHGes9xvo56esfWf94TUc7Rxh6lPgPKgYj12o+w2wxNjcT84hl2L239zQABUzLOhcaLBUuFcS5K2Dfuo4Cvw+9ds3Ij+TqS/IpPcd9nSvOvGOlMogASJIbz7s7abs90pi71fFlnBTwdr4eUX67bYwQsN5UkEZKi/0UxcMF1ARVRqj3RvLhf/n8jJ1HOnv8cITY57lHLPQg4Q537JYd+oQGo/k1+JGiIv4cHgdirL6cTsDREE4UXub6lCVVATewKJLcib2BeIib08Lku4H6VlKc/csDps6EL1pzxPHK8G2f/FmoB20RQEahpTAyQvCogjIlgcjCuC9KChNVppUCXSQPmSfXo87slYDcf1yTt+QAB+4KCpnaF6Z9K/1/AdM4Zecq5u9yGzpYwAf8dJmBuIhrvQqSmwTms6KqAw8UC8uf9awHvyBcg2doc0pBe8S1QKkHiWwK2caTaPUJA6fbT7zk5tQCXLKqAUKICl06Sje2f9x0VhiO9bun3UVFAzaTcpwVEtY77oRhPEFD+/rlE0IrI1+sCBqA4+UnG4zcNrvdP8+/IV9bidGea2V4SOe60gIG6J8rFfYKA/AnWQsXbfvyP1nD2pEzzQ/HaUW2QhWMDxa5jNTKytWiORForzUuNVi9QRZ2HVB/ac1LA91lKfLlBv19Aw1iBCWgs5ZkC0ucAe3W1Y+RVmL9T4Xoan1/1Ms2rFYzhL4Bfjj0BjaWYgMZSTEBjKSagsRDv/wL7MJ2Rean83gAAAABJRU5ErkJggg==" InformativeScreenshot="4f3f2eb4fe1a42ca344724e253984f2b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Text="[UiPathObjectExtensions.AsText(StationName)]" Version="V3">
                                     <uix:NTypeInto.Target>
-                                      <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvElementArea="1007, 190, 264, 33" CvTextArea="1021, 200, 86, 13" CvTextArgument="Station Name" CvType="InputBox" DesignTimeRectangle="1007, 190, 264, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'* STATION NAME'" Guid="1facb2cb-4c32-4532-b312-0ca9371a1c4f" InformativeScreenshot="741d549780720831f893075b71075ca6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
-                                        <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                            <uix:Target CvTextArgument="* STATION NAME:" CvType="Text" DesignTimeRectangle="810, 200, 129, 14" ElementType="Text" FriendlyName="'* STATION NAME'" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                                          </scg:List>
-                                        </uix:TargetAnchorable.Anchors>
-                                      </uix:TargetAnchorable>
+                                      <uix:TargetAnchorable BrowserURL="https://usmes.delta.corp/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" DesignTimeRectangle="851, 305, 184, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='search' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='select2-search__field' aaname='' /&gt;" Guid="374a773b-58e7-4fb3-8acb-6e4f6f678cfc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALwAAAAiCAYAAADlJbOYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE3SURBVHhe7dwxqoRAEEXRv/+1GYqGKqiJMGCiIGp93jAjCs4C7HcPVCBidqU7qr8AjBA8rFyCX5Yl+r6PPM8jyzKGeeyoYbWsps+O4PWiKIqoqiqGYYjX68Uwjx01rJbV9Dn6I3j9DXVdxzzPsa5rbNsW+74zzONG7aphtdw0TXRd96n8FLyOgHEc3x8AKVDLalptfx3B696jvwJIiZpW21+X4HUUAClR0z+D5zqD1KhpgocNgocVgocVgocVgocVgocVgocVgocVgocVgocVgocVgocVgocVgocVgocVgocVgocVgocVgoeVn8FrlcE0TZ8nIA1q+nZNhxYxtW37eQLSoCVMt4uYtI6sLMt3+NrYBDyZGlbLavp21Z7ohf4GHQG69zDMU0cNq+Vz7HIJHkgdwcNIxD/HVmKHMsoxsQAAAABJRU5ErkJggg==" InformativeScreenshot="32bbacb956f9f3dcab5775fe9164f8cd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
                                     </uix:NTypeInto.Target>
                                   </uix:NTypeInto>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ASSY'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AALC02_A_03_01'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_37" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvElementArea="1008, 258, 261, 34" CvTextArea="1014, 266, 38, 14" CvTextArgument="ASSY" CvType="InputBox" DesignTimeRectangle="1010, 258, 259, 32" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'ASSY'" FullSelectorArgument="&lt;webctrl aria-role='treeitem' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='treeitem' tag='LI' type='' class='select2-results__option select2-results__option--highlighted' aaname='ASSY' check:innerText='ASSY' /&gt;" Guid="01006dfd-672c-4f14-b3cf-ab234e2fbf98" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAkCAYAAACE5P+LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK3SURBVHhe7do7b9NQFMDxfid2Jr4IS8VQ+ACIBQm2fga6MLFUlAoGHlKRYErYKFLeilwF5+EhlTJkOfW5thM/jk0SkUSQ/5V+gtROtvPvvU6PhsOhHJ/7wmKxWLq0B9oF4sBisTKrEId7Tz8AAHEAYCMOAEzEAYCJOAAwEQcAJuIAwEQcAJiIAwATcQBg2jAOnnT17ytnEzk1r19Lbeb+AjNet3KRu+diGF9yay61y9TPrc+t32buA7Bdm8VBB3U2l6k5rHEYht7yZ5cTmaZeFwMQxiZ5rfeGl7v15FrEvSf9mQC2aqM46KBO29eLfzPX3W/44k5hwQ1/9Q6gEIIV3gPg79ogDnqkiAb1tD0vHgH+tP0v2Rlk5GLArgHYvfXj4I4UVUeA5HlDeSDcsIerPBDRZ0S7kmWM7HsBbMOacUgP7fJ18bd6EohwWQ8XQ0kgSo8g8fGkprsTdg3Azq0XB2On4I4WZQMe36/L3iXE33qEq/DsYoUdCIDtWSsOUQjsVRzupWiXUP6QMvrcYgTMZxoAdmKNOOSPFEtu+KuG2O0gKr7BKHmuQByA/Vk9DlXfQqSv6f9zzwgy8dBQ5Aa+7GhCHID9WTkO1buD+NlBEgUXi9TKP1BMPYtwq+RziQOwP6vvHAAcFOIAwEQcAJiIAwDTIg6j0Yg4AFjQHmgXiAOADOIAwEQcAJgycXj89rfcf/7RvBHA4dAOaA9cHMbjsTx7fyPHr+rmzQAOh3ZAe6BdOJpMJvL6y085Ob+RR2c/5MHLz+abAPy/dO51/h++8VwPtAsuDlffanL1y5cXn3x58s53Zw4Ah0PnXudfO6A9cHEIgkC+fq+L7/syGAzE8zzp9/vS6/Wk2+1Kp9ORdrstrVZLms2m02g0APxDktnVOdZ51rnW+dY513nXudf51w5oD4IgkDuGa7Z5HyNVowAAAABJRU5ErkJggg==" InformativeScreenshot="9abfd23883fe7922c6ba22abbfa4cd69.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://usmes.delta.corp/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvType="InputBox" DesignTimeRectangle="847, 339, 192, 32" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'AALC02_A_03_01'" FullSelectorArgument="&lt;webctrl aria-role='treeitem' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='treeitem' tag='LI' type='' class='select2-results__option select2-results__option--highlighted' aaname='AALC02_A_03_01' /&gt;" Guid="7aa1516e-e614-41a4-bce9-ff5bc9f5c2ee" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMQAAAAkCAYAAADW4pXpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQFSURBVHhe7Zk9bxMxGMf7ndiZ+CIsFQPwARALEmz9DLAwsVSUig68SEWCqWGjSG3TVFWqkrTJ0CKGLg9+Hvuufnl857tWCCV/Sz9FiX0+n/3/2YmyMp1OaXV9Qigoy1zYAXYBQqCgmJIIcefJFgBLC4QAwANCAOABIQDwgBAAeEAIADwgBAAeEAIADwgBgAeEAMCjnxCbM7rg/7mnY73esTa8kr/DRwOlfnBpai5pI/7cR9p45c+M1oI2Yxq5Ki4Xw12vbos2pq7CFXUcjbj+k/sWUM2RK8m9g2e7op3NqL6Bal5tyc3hLu386dYv6CmELIiZ7IvGQPOCmJCadqo4LULYMEf1fE3dlw1rLYELYB28oK1779eXwNfIc3YMljaWoA8zdm9sNuAtm4MjbivzFAvrnrWraKCXEDboo0H1qrUxSCjMwlWvcb0smh6CkoBYKcMgSDgaTq22+hhuz8JVr1objfQ+bnPI9SFzVBJeuwkEcx5dK/PC9y7uE/h0F8ILeFPA6oXRFpHJCpFpH6Heu0Eypmm8KTwOGyhNvjx6+Bv7KA2v2i4jG4ToRWchroNu3idfBSrC00OCqB7rSniLFjITgiYhpN920Wq4r2rMna7VhW4SolhU9fkgxG3SUYh4se371mDK+2hxcuHNfR7QVQg7zv67vH1fdrqUCSHvXUmeI4f6fBDiNukmhBJsbfdPP1PE+VdCyGemFMtgUE4EG+C2cTFlQiR1JeFV5wZC3CadhJCgZ0p8aujFW8xc8Au/nvBYVCGUXThp14K/e8elvS8bUFWIhhOm6GuTzI0uRDJfEKIXHYTQd75qQcLfFQVBz7UzaKdOjLbjBqGS/tvFSsnsuIaScTFpuPN9VvA17bIpa5ALPoToRbEQdtfUA3xdF8kRUCiO4E6ZOHx8Td13FI4oAGkoC5FxZYLUVOcThzF6Vp6vINSl/RrijSD7nBCiF4VCNAXdIJNvdriz3/Ka25WtOG6RJARp8a+VxfZLfH93X1vCxU+urUtOQotclz0FnKglogXPF9/TzWddugU3eLbGNYEQXSk+IQBYBiAEAB4QAgCP5RQi+O3hl9Lv3O63hFJyv5+KufHYwE2ohTg7O8MJAZYedoBdgBAAGCAEAB4QAgCPQIhHb3/R3Wcf1IYALDqcfXZAhDg/P6en709o9eVAbQzAosPZZwfYhZXZbEavP/+gh+sn9ODVd7r34pN6EQCLBmedM3//zVgcYBdEiO2vO7T9c0LPP07o8buJfJ8CYNHhrHPmOfvsgAgxn8/py7cBTSYTOj09pfF4TMfHx3R0dESj0YgODw9pOBzSwcEB7e/vC3t7ewD891R55exyhjnLnGnONmecs86Z5+yzA/P5nP4C1hCDVHVQjOQAAAAASUVORK5CYII=" InformativeScreenshot="cb2df99f373cb248106b699f488c5683.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.PointOffset>
+                                          <uix:PointOffset Position="TopLeft" X="93" Y="17" />
+                                        </uix:TargetAnchorable.PointOffset>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
-                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,554" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* SECTION ALIAS'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Text="[UiPathObjectExtensions.AsText(Section_Alias)]" Version="V3">
@@ -621,11 +624,11 @@
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
-                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,554" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '* GROUP NAME'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Text="[UiPathObjectExtensions.AsText(Group_Name)]" Version="V3">
@@ -641,11 +644,11 @@
                                   </uix:NTypeInto>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ASSY-1'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" DesignTimeRectangle="740, 345, 148, 32" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'ASSY-1'" FullSelectorArgument="&lt;webctrl aria-role='treeitem' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='treeitem' tag='LI' type='' class='select2-results__option select2-results__option--highlighted' aaname='ASSY-1' check:innerText='ASSY-1' /&gt;" Guid="0007e1cd-42b5-4ac2-bc65-6040db3197f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJgAAAAkCAYAAAB1yvMvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKkSURBVHhe7ZmxbtNQFIZ5p+5MvAhLxQB9gDIhYOszgFhZKkIkkOJEQWJqG8YgJXEcRUaxnThDKnXocupz7evaznXsa+VCIv4jfWrd/7TL+XTudfokCAI6vfQJhdpnsVP9n9cEwVBGakuwk/NvAOwNCAaMAsGAUSAYMAo7xW5BMGAECAaMAsGAUSAYMAoEA0aBYMAojQW7sO/FvwKcgTo/GdyKXNbGHtbL2yFtouftvzukm7soCNzCz8vg/nu6aasy8LdoKFg87E00QOXAhTz54baCzHNF3gqi+C6kiyQTCPFqCpPKW7MfGKOZYGLYt9SSX3N5Il9xY9XOIxQyCelqbC+xWblPR0hgjEaCpUM8d8mJ5p4/zqqOsqo8JidUE1kg2EHATnU6HR3BYkGkVMrjTB5RZRJV5Yzoibfjo9CKvjIg2EGgL1hm8I/PikFKiaJSvghU5elRGkZbsoEoEOwg0BZse2PFx2TZnUr0cxW3XJ1cSljcXkKebBXvgbIHgv1rNAWLZVKXYsiSRIjSi31prrrj1QSCHQR6ghWPR0kiyC4ReFPtenNU5xDs2NEQbNfbXzbj7wuDzQlYlWeBYMdOfcEqtlT8yb4caCJcWsVBV+USCHbsaGwwAPSBYMAoEAwYBYIBo6SCLZdLCAb2DjtlWRYEA2aAYMAoEAwYJSfYqy8ePX3TUTYCoAu7dNZKBFutVvS6PafTDwNlMwC6sEtvrSAWLAxD+vT9il5e/qEXH3/Rs/dd5S8BUAW7ww49/+xS/7dP3W43FoxN6w89emf5dPbVF+cnALqwO+zQj0gu/nxVCLZer4VgnufRYrEg13VpPp/TbDYjx3FoOp2Sbds0mUxoPB4LRqMR+A+R82cX2Al2gx1hV9gZdocd8n2f+G7f6/XoAVMkZ1aGURqFAAAAAElFTkSuQmCC" InformativeScreenshot="39072245290084cdf47b6cae6202fdb6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" DesignTimeRectangle="847, 379, 192, 32" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'ASSY-1'" FullSelectorArgument="&lt;webctrl aria-role='treeitem' tag='LI' /&gt;" FuzzyAccuracy="0.7" FuzzySelectorArgument="&lt;webctrl aria-role='treeitem' tag='LI' type='' class='select2-results__option select2-results__option--highlighted' aaname='ASSY-1' /&gt;" Guid="0007e1cd-42b5-4ac2-bc65-6040db3197f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJgAAAAkCAYAAAB1yvMvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKkSURBVHhe7ZmxbtNQFIZ5p+5MvAhLxQB9gDIhYOszgFhZKkIkkOJEQWJqG8YgJXEcRUaxnThDKnXocupz7evaznXsa+VCIv4jfWrd/7TL+XTudfokCAI6vfQJhdpnsVP9n9cEwVBGakuwk/NvAOwNCAaMAsGAUSAYMAo7xW5BMGAECAaMAsGAUSAYMAoEA0aBYMAojQW7sO/FvwKcgTo/GdyKXNbGHtbL2yFtouftvzukm7soCNzCz8vg/nu6aasy8LdoKFg87E00QOXAhTz54baCzHNF3gqi+C6kiyQTCPFqCpPKW7MfGKOZYGLYt9SSX3N5Il9xY9XOIxQyCelqbC+xWblPR0hgjEaCpUM8d8mJ5p4/zqqOsqo8JidUE1kg2EHATnU6HR3BYkGkVMrjTB5RZRJV5Yzoibfjo9CKvjIg2EGgL1hm8I/PikFKiaJSvghU5elRGkZbsoEoEOwg0BZse2PFx2TZnUr0cxW3XJ1cSljcXkKebBXvgbIHgv1rNAWLZVKXYsiSRIjSi31prrrj1QSCHQR6ghWPR0kiyC4ReFPtenNU5xDs2NEQbNfbXzbj7wuDzQlYlWeBYMdOfcEqtlT8yb4caCJcWsVBV+USCHbsaGwwAPSBYMAoEAwYBYIBo6SCLZdLCAb2DjtlWRYEA2aAYMAoEAwYJSfYqy8ePX3TUTYCoAu7dNZKBFutVvS6PafTDwNlMwC6sEtvrSAWLAxD+vT9il5e/qEXH3/Rs/dd5S8BUAW7ww49/+xS/7dP3W43FoxN6w89emf5dPbVF+cnALqwO+zQj0gu/nxVCLZer4VgnufRYrEg13VpPp/TbDYjx3FoOp2Sbds0mUxoPB4LRqMR+A+R82cX2Al2gx1hV9gZdocd8n2f+G7f6/XoAVMkZ1aGURqFAAAAAElFTkSuQmCC" InformativeScreenshot="01da8bfdcbef2d1f2a5db54564508418.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
-                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -656,7 +659,7 @@
                                     <uix:NTypeInto.Target>
                                       <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvType="InputBox" DesignTimeRectangle="1513, 231, 261, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT STATION_IDX'" FullSelectorArgument="&lt;webctrl id='STATION_IDX' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='STATION_IDX' tag='INPUT' type='number' class='form-control  tableData' aaname='' /&gt;" Guid="6962cf1a-e5f0-48d5-8fd2-1d7ec304ebee" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAiCAYAAACnZsAPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVHhe7ddRCsIwFERRF+Y2uqrijlxaoRIwouFZ30h8IHMPDIQ2n/cnpx0oQGgo8QjtfLkyNn3dS2jATISGEoSGEoSGEoSGEtNCW5blfsK/2Lbt66kIzVgUUHYqQjMWBZSditCMRQH1resafu9TEZqxKKC2Fllf9L9NRWjGooCeIzuKTUVoxsZ4osj6xrsqQjM2xqNMRWjGooCyUxGasSig7FSEZiwKKDsVoRkb44keAX3jXRWhGRvjactE1qYiNGNRQG2fImtTEZqxKKC+o8jaVIRmLAooOxWhGYsCyk5FaMaigLJTERpKTAsNOEJoKEFoKEFoKPE2NMZmr3uEBvwSoaHAvt8Ab3IeOlMmA80AAAAASUVORK5CYII=" InformativeScreenshot="12ea92a2af4f5f13e03736d7e6d07f63.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                             <uix:Target CvTextArgument="STATION_IDX:" CvType="Text" DesignTimeRectangle="1315, 231, 109, 27" ElementType="Text" FriendlyName="'* STATION_IDX'" FullSelectorArgument="&lt;webctrl aaname=' STATION_IDX:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' STATION_IDX:' tag='LABEL' type='' class=' control-label text-nowrap tableLabel' check:innerText='* STATION_IDX:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAfCAYAAADgDDPbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKeSURBVGhD7ZbNjcMgEIXTkwtJI+4jF/exdzexdzeRQ4pgAWPmDQxek9iRRponoQTMz/C+AfvmTGpksBTJYCmSwVIkg6VIBkuRDJYiGSxFMliKZLAUyWApksFSJIOlSDWsh2+6/6TKnl5uHgc3DLxMi9yOZZxfaQ6vZaJn05Ia/ezzyMZUZZx9BLQWmzNpmYoxw+RohVW4Diy/6jW7sTGuVJ4nxhVb2j7kPqsoztGxbYA3ITYZ1uM3VVpa3LQtXJQ+WGVfMuUjWNlkuSAUvk4B5SpYqVAc4GduhPGpjWAFSLdwqu7rb/zfOGGZeJ0JaAQuKGU+mTG6MfXj41fVRmyS5keT0GS5vUoKDOAkWGzveJPgvKWnuU59CFbU0wMKoB6p6uuCaIP/bWIfVp7HG5SvAoFWF6xWIkVRBm/9KQafaOW4K2AFATDaLiTTNItjOaztCoynLAGT1MqOSnuw6FkMWMikTT2w2n2D0JB1FYLl61sM29irYAlJE8V8xblWEaynv/Ju/gqMhymdsB/5ZAUdeXnvBlwZQRsoD1cPrByXCAueS7DK+S6D1X6GvpY+8JPVqzITqqunHZQEoHUV9sBq9121Dys2EKAvnCy21cpPvu5nsLKkr5mgVsDULhceZA8s2vD+O4vYFLC8aD3/4RP7nwxLjBGvxhn+09i3YIXAGBM0/wisnLHtgtN0wcLEYSZDjNAuweJ9ef+WDsPC0yMlSFqL6gT0bVh5waK0IGLAZWAkMAnA1EZsahiymwz8xOW5eeDc1A9hiQX3AvFSGPVt9d41KJohXTuSmXjcqwFgEs3XDStKMKsaD3OXsLzoZX8uLL4UQCnjg4QJ+zvpnWX6hgyWIhksRTJYh4VfmbwIr7tLZLAUyWApksFSI+f+ANs8Udt2x4YEAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
@@ -706,7 +709,7 @@
                                     <uix:NSelectItem.Target>
                                       <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77#" CvType="InputBox" DesignTimeRectangle="1513, 358, 261, 30" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-USE_EQUIP_QTY_FLAG-container' aria-role='combobox' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='select2-USE_EQUIP_QTY_FLAG-container' aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' /&gt;" Guid="8c7eb78f-e242-4aff-a0ab-6ffe2069b8f3" InformativeScreenshot="6d87534966e67aa1a0e69040ad3518e1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                             <uix:Target CvTextArgument="USE_EQUIP_QTY_FLAG:" CvType="Text" DesignTimeRectangle="1315, 358, 171, 27" ElementType="Text" FriendlyName="'* USE_EQUIP_QTY_FLAG'" FullSelectorArgument="&lt;webctrl aaname=' USE_EQUIP_QTY_FLAG:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' USE_EQUIP_QTY_FLAG:' tag='LABEL' type='' class=' control-label text-nowrap tableLabel' check:innerText='* USE_EQUIP_QTY_FLAG:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK8AAAAfCAYAAACRWJ0AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANySURBVHhe7ZdNcusgDIDfnXyQXsT3yMb36N6XyD67nqCLHMIPxyAJ9ANu7DRM9c1oOiFAhPSZpP8Wx+kUl9fpFpfX6RaX1+kWl9fpFpfX6RaX1+kWl9fpFpfX6RaX1+kWl9fpFpfX6RaX1+kWLu/3ZxgNw9f4WuE+j8swDMsw3eJI5D4v4zo+jMt8j2Mrt2mbT2Ocl8cU6T36vsp9mUdhXQieVswXosgvsOdMMBdybM/F5rZM5R5kA36OIkI+XzBH6wE/e46QA10H+0xhps1twvVmHUQH7DwVeT/C3/ha4UeNLuMl8mqN2GIk1TlL3jXMxkVsMTdR7DkhHvngmen5QKRqMgfJC3WLIX6uVbdWedON+xHEXf+mUG7g9kaT5LK5YXwq5a0/yTm4N20SBZ/8vBDS+FHyYi7a2QVoo+lcbTzAc0D4e0lIW4gNlFdMu7FfmMMYz8DnWzfzfZ7MXFHexPWySfsZr95v+Qpub7R8C2ScJS9pPG8CF6v9TGSuKa80TwaaKM2D+uTi2XvnAqpnEzlCXqzHdFP2M/uTI31r5PKmnwzXeAsngQXaG00kCSFKBsXIQ5UdyPfGiEWtFLlsfvuZ+FqaC+aNTbOlkcVH5ObzHHKw4XPcP5df5wB5oWbbHEm+Wv6UuryX8PISfyc8buAQCnsajWMYWZNOkhdyfLG8PGrSoCxHyot5xyjPpUIeOhrpcxrkZbUU1kjfNjCWwsg5l3cHexq9ITTXOFgblRursm/Z/D1n4uLYD5JN5Rxhhx/JG6AyGB4UPCuvdB5+Bin/18pbFg4arTcN1iYZzpKX3Dy8BnztnjPxuTUBbaRbCFDqo+ZLSWutOQz5YQFq/SJ1FyNtCvvwbyY42xny0gRxf2wgFisUoixcmXStGCo1YUg+RYHwCSfjzWdapx4rL9YgBG0YFaFo5LvKC3mpkdbRGz7vz7nyBtgVTwI/kyZYRCoobVwWNZmpnHmgQMbnhyhr03YmSZwn5Q2YTRfk+315y1j7RXpSLiYPItSo8ZaGvpA9n5J3hTebfwWIQtCDnSrvhi5lS758zhnyPrCaWcjwlvLCe7xmK1DbLB+lj2QOrDtS3n4pbuRdzX0t5Y0sCvUH+cPyOr3j8jrd8vbyqv/EvPHXvIz+j+Nv/AxQ/wfo6DeJ37xOt7i8Tre4vE6nLMt/5a22laeA9P4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
@@ -730,7 +733,7 @@
                                     <uix:NSelectItem.Target>
                                       <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77#" DesignTimeRectangle="505, 361, 261, 30" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-OFFLINE_TYPE-container' aria-role='combobox' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='select2-OFFLINE_TYPE-container' aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' /&gt;" Guid="7101ebee-44ef-43d0-8a6f-9f2198dae954" InformativeScreenshot="f6819d545e811d2eedfefc0199f6bddb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                             <uix:Target CvTextArgument="OFFLINE TYPE:" CvType="Text" DesignTimeRectangle="308, 361, 114, 27" ElementType="Text" FriendlyName="'* OFFLINE TYPE'" FullSelectorArgument="&lt;webctrl aaname=' OFFLINE TYPE:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' OFFLINE TYPE:' tag='LABEL' type='' class=' control-label text-nowrap tableLabel' check:innerText='* OFFLINE TYPE:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAfCAYAAAAyXDmDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIlSURBVGhD7ZbLkcMgDEC3pxSSRugjF/rI3U3s3U3sIUWwgPkJiU/i2JvV6M1oM9gYJD2T7JcRWCJimSJimSJimSJimSJimSJimSJimSJimSJimSJimSJimSJimYLF3q/26i0MxjwWZS6XSxHKLI9wM7Lqak4ItRg3Fa8RQq/urlnUNlZoYcdqdJjvp/tLeT/8TJyf8+zvX9GqJYU2azEHLPFYjCqvD/qykeuDQfS5gBZ7vYdBj9aGW4CG/qFY3IATxBY5l2ukfaK43lpJ7l6x/qTa4TV8+mif3FXTG5DXUwGuaAwqGLBXbL1uRyy5f4deXehergPnWTyfrsX8iPomwCf25oRauT9uYP/4z4r6KwVAvK29BlgOE6u00XUz0/yDxdZ5p5yKPcjn63oGYhs5QLHxa9if3iiXoFuQu70lkooYzD9OrF0vvYRx747YKshGljxR1xJ6AtYkns+54BMLYtDbQuy3Hdmh/fC4k3uLA0jefFJU2hxGFNVv7E6xfhjW9BPOE1vm5iP2I9Loi49cTF9sA3hiZxkU9Gli8xwnsyN20CzEUCysDeU/6MsGUd8Er4md/I1NCT77IgDeIdaSrqmQ+zlic6+IOTPPU/VN8JrYotllgxwf9V9xtV7OzYWIbZA3pAIk8SaxdWyi58XmJrsgxNYxEn2y2Dp8vY01dojdgKcAb+D5FLGWLFHECv8QEcsUEcsUEcsUEcsUEcsUEcsSY34BaC9uIuhqEFUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
@@ -744,7 +747,7 @@
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NSelectItem>
                                 </Sequence>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" sap:VirtualizedContainerService.HintSize="450,84" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fdd86fd0-f494-45df-905f-40768b220b73" Version="V3">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="http://10.153.200.23:8080/MES/FormBuilderPages.jsf?funcode=Station%20Master%20Configuration&amp;menuid=77" CvElementArea="301, 407, 78, 37" CvTextArea="324, 418, 31, 14" CvTextArgument="Add" CvType="Button" DesignTimeRectangle="303, 409, 75, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Add'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary fbtn-add' aaname='Add' check:innerText='Add' /&gt;" Guid="189cde44-f34a-4037-bde3-9d68ffbcae78" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAmCAYAAACFz8YUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG+SURBVGhD7ZrLasJAFIb7VEWoL1BfqosWuqhduCml9LbtStriolBCL3tXirgTwaUuRBDcnM4lE5PJpBk9TAfK/8OHxPwh5ONMjJADQvYO5DFSkPf4PaJW+5UOT56AhfRy/zVKTelk8h6EuOb5Mx1dvFHz8h1YKC/Cz11OYCav1X6BuBqkn2PhySSTJ0fTdQAoIj2ZQN6OQB4DyGMAeQwgjwHkMYA8BtHldaYbdc7JwL2/zIwmtX2fDp/I8sbUXxMt10LgfObY7wLyNMmClrSinvl0dUpAnkItWTVxv1ysEmuyoX7i6Pp0AhBRnl6y5gJ7c3Hi9YI6+U4qZTkdF46RycT4dAIRT95gJc6UW6pqW07NtqMms0KoEePTCUU0eeVJ00vNnqDtdrGnxfh0whFJnr44d8w0Qp4be8karOWmptN+hFHH7tYJRQR56Q3d+Vxn7StJ2E5s9p1PJxB/L6/mZq7/ceR+OFI5OhWPIT6dAESYvP8D5DGAPAaQxwDyGEAeA8hjAHkMII+BUx5e9Kmn8kWf288hNc66EFiB9NI47dJVMkiN5eTJ3HwM8XJjBdLLtfCTT0Eeslsgb+8Q/QDm27SU+pi2ywAAAABJRU5ErkJggg==" InformativeScreenshot="a7078de5a3ef24de78e61a02e4b41e85.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MES | Station Master Configuration' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
                                   </uix:NClick.Target>
